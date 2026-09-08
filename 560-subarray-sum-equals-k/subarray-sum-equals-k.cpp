@@ -35,6 +35,6 @@ public:
             }
             m[prefix_sum[j]]++;
         }
-        return count++;
+        return count;
     }
 };
