@@ -29,10 +29,11 @@ public:
     }
     
     bool empty() {
-        if (s1.size()==0){
-            return true;
-        }
-        return false;
+        // if (s1.size()==0){
+        //     return true;
+        // }
+        // return false;
+        return s1.empty();
     }
 };
 
