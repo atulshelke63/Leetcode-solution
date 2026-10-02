@@ -10,15 +10,15 @@ public:
                 if (st.empty()){
                     return false;
                 }
-                if (ch==')' && st.top()!='('){
+                if ((ch==')' && st.top()!='(') || (ch=='}' && st.top()!='{') || (ch==']' && st.top()!='[')){
                     return false;
                 }
-                if (ch=='}' && st.top()!='{'){
-                    return false;
-                }
-                if (ch==']' && st.top()!='['){
-                    return false;
-                }
+                // if (ch=='}' && st.top()!='{'){
+                //     return false;
+                // }
+                // if (ch==']' && st.top()!='['){
+                //     return false;
+                // }
                 st.pop();
             }
         }
